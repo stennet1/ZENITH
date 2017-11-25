@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+  <head>
+    <title>zenith. — Fall 2017</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css"/>
+    <link rel="stylesheet" type="text/css" href="../styles/seasons.css"/>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="../index.html">zenith.</a></li>
+        <li><a href="../about.html">about</a></li>
+        <li><a href="../seasons.html">seasons</a></li>
+      </ul>
+    </header>
+    <h1>Fall 2017</h1>
+    <ul id="products">
+      <li>
+        <figure>
+          <a href="./fall/white.html">
+            <img class="default" src="./jess/0-hue-white-fullbody.jpg"/>
+            <img class="special" data-src="./jess/special-0.jpg"/>
+          </a>
+          <figcaption>
+            Classic White<br>
+            $580
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <a href="./fall/orange.html">
+            <img class="default" src="./jess/19-hue-orange-fullbody.jpg"/>
+            <img class="special" data-src="./jess/special-19.jpg"/>
+          </a>
+          <figcaption>
+            Soft Orange<br>
+            $500
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <a href="./fall/yellow.html">
+            <img class="default" src="./jess/51-hue-yellow-fullbody.jpg"/>
+            <img class="special" data-src="./jess/special-51.jpg"/>
+          </a>
+          <figcaption>
+            Spongy Yellow<br>
+            $560
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <a href="./fall/green.html">
+            <img class="default" src="./jess/147-hue-green-fullbody.jpg"/>
+            <img class="special" data-src="./jess/special-147.jpg"/>
+          </a>
+          <figcaption>
+            Barnacle Green<br>
+            $490
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <a href="./fall/blue.html">
+            <img class="default" src="./jess/235-hue-blue-fullbody.jpg"/>
+            <img class="special" data-src="./jess/special-235.jpg"/>
+          </a>
+          <figcaption>
+            Hudson Blue<br>
+            $800
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <a href="./fall/pink.html">
+            <img class="default" src="./jess/300-hue-pink-fullbody.jpg"/>
+            <img class="special" data-src="./jess/special-300.jpg"/>
+          </a>
+          <figcaption>
+            Pretty Pink<br>
+            $800
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
+    <footer>
+      <ul>
+        <li class="left">&copy; 2017 zenith.</li>
+        <li class="left">Terms of use</li>
+        <li class="left">Privacy policy</li>
+        <li>Shipping</li>
+        <li>Returns</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>fb</li>
+        <li>tw</li>
+        <li>ig</li>
+      </ul>
+    </footer>
+    <script>
+      function init() {
+        var imgDefer = document.getElementsByTagName('img');
+        for (var i = 0; i < imgDefer.length; i++) {
+          if (imgDefer[i].getAttribute('data-src')) {
+            imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+          }
+        }
+      }
+      window.onload = init;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head>
+    <title>zenith.</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css"/>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="index.html" title="zenith.">zenith.</a></li>
+        <li><a href="about.html" title="zenith. — About">about</a></li>
+        <li><a href="seasons.html" title="zenith. — Seasons">seasons</a></li>
+      </ul>
+    </header>
+    <div id="videos">
+      <div>
+        <a href="./seasons/fall.html">
+          <video autoplay loop>
+            <source src="fall2017.mp4" type="video/mp4">
+          </video>
+          <figcaption>new arrivals</figcaption>
+        </a>
+      </div>
+      <div id="wide">
+        <a href="./seasons/summer.html">
+          <video autoplay loop>
+            <source src="jane.mp4" type="video/mp4">
+          </video>
+          <figcaption>summer styles</figcaption>
+        </a>
+      </div>
+    </div>
+    <div id="favs">
+      <h2>our favorites</h2>
+      <ul id="products">
+        <li>
+          <figure>
+            <a href="./seasons/summer/white.html">
+              <img class="default" src="./seasons/clare/0_full_body.jpg"/>
+              <img class="special" data-src="./seasons/clare/0_cover.jpg"/>
+
+            </a>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <a href="./seasons/fall/orange.html">
+              <img class="default" data-src="./seasons/jess/special-19.jpg"/>
+              <img class="special" data-src="./seasons/jess/19-hue-orange-fullbody.jpg"/>
+
+            </a>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <a href="./seasons/fall/yellow.html">
+              <img class="default" src="./seasons/jess/special-51.jpg"/>
+              <img class="special" data-src="./seasons/jess/51-hue-yellow-fullbody.jpg"/>
+            </a>
+          </figure>
+        </li>
+      </ul>
+    </div>
+    <footer>
+      <ul>
+        <li class="left">&copy; 2017 zenith.</li>
+        <li class="left"><a href="terms.html">Terms of use</a></li>
+        <li class="left"><a href="privacy.html">Privacy policy</a></li>
+        <li><a href="shipping.html">Shipping</a></li>
+        <li><a href="returns.html">Returns</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://www.facebook.com/matthew.cunningham.73700">fb</a></li>
+        <li><a href="https://twitter.com/itsmatthewc">tw</a></li>
+        <li><a href="https://instagram.com/itsmatthewc">ig</a></li>
+      </ul>
+    </footer>
+    <script>
+      function init() {
+        var imgDefer = document.getElementsByTagName('img');
+        for (var i = 0; i < imgDefer.length; i++) {
+          if (imgDefer[i].getAttribute('data-src')) {
+            imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+          }
+        }
+      }
+      window.onload = init;
+    </script>
+  </body>
+</html>

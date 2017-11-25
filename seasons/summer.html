@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+  <head>
+    <title>zenith. — Summer 2017</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css"/>
+    <link rel="stylesheet" type="text/css" href="../styles/seasons.css"/>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="../index.html">zenith.</a></li>
+        <li><a href="../about.html">about</a></li>
+        <li><a href="../seasons.html">seasons</a></li>
+      </ul>
+    </header>
+    <h1>Summer 2017</h1>
+    <ul id="products">
+      <li>
+        <figure>
+          <a href="./summer/white.html">
+            <img class="default" src="./clare/0_cover.jpg"/>
+            <img class="special" data-src="./clare/0_front.jpg"/>
+          </a>
+          <figcaption>
+            Original White Pre-rolled<br>
+            $580
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <a href="./summer/orange.html">
+            <img class="default" src="./clare/18_cover.jpg"/>
+            <img class="special" data-src="./clare/18_full_body.jpg"/>
+          </a>
+          <figcaption>
+            Citrus Pre-rolled<br>
+            $500
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <a href="./summer/yellow.html">
+            <img class="default" src="./clare/65_cover.jpg"/>
+            <img class="special" data-src="./clare/65_back.jpg"/>
+          </a>
+          <figcaption>
+            Sunkissed Pre-rolled<br>
+            $560
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <a href="./summer/green.html">
+            <img class="default" src="./clare/160_cover.jpg"/>
+            <img class="special" data-src="./clare/160_back.jpg"/>
+          </a>
+          <figcaption>
+            Summer Seaweed Pre-rolled<br>
+            $490
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <a href="./summer/blue.html">
+            <img class="default" src="./clare/230_cover.jpg"/>
+            <img class="special" data-src="./clare/230_full_body.jpg"/>
+          </a>
+          <figcaption>
+            Ocean Blue Pre-rolled<br>
+            $800
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <a href="./summer/pink.html">
+            <img class="default" src="./clare/300_cover.jpg"/>
+            <img class="special" data-src="./clare/300_front.jpg"/>
+          </a>
+          <figcaption>
+            Violet Rose Pre-rolled<br>
+            $800
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
+    <footer>
+      <ul>
+        <li class="left">&copy; 2017 zenith.</li>
+        <li class="left">Terms of use</li>
+        <li class="left">Privacy policy</li>
+        <li>Shipping</li>
+        <li>Returns</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>fb</li>
+        <li>tw</li>
+        <li>ig</li>
+      </ul>
+    </footer>
+    <script>
+      function init() {
+        var imgDefer = document.getElementsByTagName('img');
+        for (var i = 0; i < imgDefer.length; i++) {
+          if (imgDefer[i].getAttribute('data-src')) {
+            imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+          }
+        }
+      }
+      window.onload = init;
+    </script>
+  </body>
+</html>
