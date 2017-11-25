@@ -161,3 +161,31 @@ button:active {
   opacity: 1;
   cursor: pointer;
 }
+
+@media screen and (max-width: 830px) {
+    article {
+        position: relative !important;
+        top: 0px !important;
+        left: 0px !important;
+        width: 100%;
+        display: block;
+        height: unset;
+    }
+
+    article > div {
+      margin: 50px auto;
+      font-size: 18px;
+      min-width: 300px;
+      width: 45%;
+    }
+
+    article > div > #main {
+      font-size: 13px;
+    }
+
+    #sidebar {
+      width: 100%;
+      display: block;
+      float: unset;
+    }
+}
