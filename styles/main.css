@@ -104,6 +104,12 @@ footer a:hover {
   cursor: pointer;
 }
 
+footer img {
+  width: 15px;
+  position: relative;
+  top: 2px;
+}
+
 #videos {
   width: 100%;
   max-height: 90vh;
