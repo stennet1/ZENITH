@@ -42,6 +42,76 @@ h1 {
   margin-right: 10px;
 }
 
+label {
+  width: 20%;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form div {
+  width: 100%;
+}
+
+form input, textarea {
+  width: calc(80% - 21px);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  font-size: 14px;
+  height: 25px;
+  border: 1px solid #eee;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  border-radius: 0px;
+  border: 1px solid black;
+  -webkit-border-radius: 0px;
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  background: black;
+  color: white;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+label[for="concerns"] {
+  width: 100%;
+}
+
+textarea[name="concerns"] {
+  display: block;
+  width: calc(100% - 1em - 17px);
+  height: 10em;
+  padding: 1em;
+  border-width: 1px;
+  -webkit-appearance: textfield !important;
+  appearance: textfield !important;
+  resize: none;
+}
+
+input[type="text"], textarea {
+  color: #777;
+}
+
+input[type="text"]:focus, textarea:focus {
+  color: #000;
+  outline: none;
+}
+
 @media screen and (max-width: 830px) {
   main {
     width: 80%;
